@@ -1,0 +1,16 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Sebastian",
+        "password": "Eschweiler",
+        "email": "sebastian@codingthesmartway.com"
+      },
+      {
+        "id": 2,
+        "name": "Steve",
+        "password": "Palmer",
+        "email": "steve@codingthesmartway.com"
+      }
+    ]
+  }
