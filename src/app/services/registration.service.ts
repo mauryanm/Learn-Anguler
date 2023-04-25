@@ -8,6 +8,6 @@ export class RegistrationService {
 
   constructor(private http:HttpClient) { }
   userReagistration(data:any){
-    return this.http.post('http://localhost:3000/user', data)
+    return this.http.post('http://localhost:3000/users', data)
   }
 }

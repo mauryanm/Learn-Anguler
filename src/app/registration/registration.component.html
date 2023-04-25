@@ -1,58 +1,45 @@
-<section class="vh-100 formbg">
-    <div class="container h-100">
+<section class="min-vh-100 formbg py-5 mt-5">
+    <div class="container h-100 pb-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-lg-12 col-xl-11">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-xl-5 order-2 order-lg-1">
-                        <div class="card text-black" style="border-radius: 25px;">
-                            <div class="card-body p-md-5">
-                                <p class="text-left h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registration Form</p>
-                                <form #registrationform="ngForm" (ngSubmit)="registerForm(registrationform.value)" class="mx-1 mx-md-4">
+                        <div class="card text-black border-3 rounded">
+                            <div class="card-body p-md-4">
+                                <p class="text-left h5 fw-bold mb-4 mx-1 mx-md-4 mt-3">Registration Form:</p>
+                                <form #registrationform="ngForm" (ngSubmit)="registerForm(registrationform.value)" class="mx-1 mx-md-4 fw-bold">
 
                                     <div class="d-flex flex-row align-items-center mb-4">
-                                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <label class="form-label" for="username">Your Name</label>
-                                            <input type="text" id="username" ngModel name="name" class="form-control" />
+                                            <label class="form-label" for="first_name">First Name<sup class="text-danger">*</sup></label>
+                                            <input type="text" id="first_name" ngModel name="first_name" class="form-control" required="" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label class="form-label" for="last_name">Last Name<sup class="text-danger">*</sup></label>
+                                            <input type="text" id="last_name" ngModel name="last_name" class="form-control" required="" />
                                         </div>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center mb-4">
-                                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <label class="form-label" for="useremail">Your Email</label>
-                                            <input type="email" id="useremail" ngModel name="email" class="form-control" />
+                                            <label class="form-label" for="useremail">Email ID<sup class="text-danger">*</sup></label>
+                                            <input type="email" id="useremail" ngModel name="email" class="form-control" required="" />
                                         </div>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center mb-4">
-                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <label class="form-label" for="password">Password</label>
-                                            <input type="password" id="password" ngModel name="password" class="form-control" />
+                                            <label class="form-label" for="mobile">Nepal Mobile Number<sup class="text-danger">*</sup></label>
+                                            <input type="mobile" id="mobile" ngModel name="mobile" class="form-control" required="" />
                                         </div>
-                                    </div>
-
-                                    <div class="d-flex flex-row align-items-center mb-4">
-                                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                                        <div class="form-outline flex-fill mb-0">
-                                            <label class="form-label" for="repassword">Repeat your password</label>
-                                            <input type="password" id="repassword" ngModel name="repassword" class="form-control" />
-                                        </div>
-                                    </div>
-
-                                    <div class="form-check d-flex justify-content-center mb-5">
-                                        <input class="form-check-input me-2" ngModel type="checkbox" name="agree" value=""
-                                            id="agree" />
-                                        <label class="form-check-label" for="agree">
-                                            I agree all statements in <a href="#!">Terms of service</a>
-                                        </label>
                                     </div>
 
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                                        <button type="submit" class="btn btn-aus px-5 fw-bold">Finish</button>
                                     </div>
-
+                                    
                                 </form>
                             </div>
                         </div>

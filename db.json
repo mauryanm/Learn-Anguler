@@ -6,6 +6,22 @@
       "author": "typicode"
     }
   ],
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Ajay",
+      "last_name": "Maurya",
+      "email": "ajay@ajay.com",
+      "mobile": "1234567890"
+    },
+    {
+      "first_name": "Raj",
+      "last_name": "Maurya",
+      "email": "raj@raj.com",
+      "mobile": "1234567890",
+      "id": 2
+    }
+  ],
   "comments": [
     {
       "id": 1,
