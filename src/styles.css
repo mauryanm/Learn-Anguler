@@ -19,3 +19,6 @@ body{--bs-body-font-family: "Arial", Gadget, Arial, sans-serif;}
     --bs-btn-disabled-border-color: #342964;
 }
 .formbg{background-image: url('./assets/images/form-bg.jpg'); background-size: 100%; background-repeat: no-repeat; background-position: bottom center;}
+@media only screen and (max-width: 360px) {
+    .header .logo-mh-50{max-width: 200px;}
+}
